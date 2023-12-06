@@ -10,26 +10,36 @@
     <form action="index.html">
         <div>
         <label for='firstName'>First Name</label>
-        <input type='text' name='firstName' id='firstName'>
+        <input type='text' name='firstName' id='firstName' required>
         <label for='lastName'>Last Name</label>
-        <input type='text' name='lastName' id='lastName'>
+        <input type='text' name='lastName' id='lastName' required>
         </div>
         <p>Select a Race:</p>
         <div>
-            <input type="radio" name="race" id="5k" value="5k">
-            <label for="5k">5K</label>
-            <input type="radio" name="race" id="halfMarathon" value="halfMarathon">
-            <label for="halfMarathon">Half Marathon</label>
-            <input type="radio" name="race" id="fullMarathon" value="fullMarathon">
-            <label for="fullMarathon">Full Marathon</label>
+            <input type="radio" name="race" id="funRun" value="funRun">
+            <label for="funRun">5K Run</label>
         </div>
         <div>
-            Seclect an age group:
+            <input type="radio" name="race" id="halfMarathon" value="halfMarathon">
+            <label for="halfMarathon">Half Marathon</label>
+        </div>
+        <div>
+            <input type="radio" name="race" id="fullMarathon" value="fullMarathon">
+            <label for="fullMarathon">Full Marathon</label>
+        </div>            
+        <div>
+            <label for="age">Select an age:</label>
             <select name="age" id="age">
                 <option value="under18">Under 18</option>
                 <option value="19-29">19-29</option>
                 <option value="30+">30+</option>
             </select>
+        </div>
+        <div>
+        <label for='email'>Email:</label>
+        <input type='email' name='email' id='email' >
+        <label for='password'>Password</label>
+        <input type='password' name='password' id='password' required>
         </div>
         <div>
             <button type="submit">Submit</button>
